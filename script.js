@@ -3,12 +3,13 @@
 var result = 0;
 
 function moveRect() {
-    var rect = {x: Math.random()*window.innerWidth,
-                y: Math.random()*window.innerHeight}
-    console.log(rect.x + " + " + rect.y);
-    
     var rect_ = {x: Math.random()*window.innerWidth,
                 y: Math.random()*window.innerHeight}
+    //console.log("rect 1: " + rect.x + " : " + rect.y);
+    
+    var rect = {x: Math.random()*window.innerWidth,
+                 y: Math.random()*window.innerHeight}
+    //console.log("rect 2: " + rect_.x + " : " + rect_.y);
     
     var DOMrect_ = $("#rect_");
     DOMrect_.css("margin-left", rect_.x);
